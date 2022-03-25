@@ -19,6 +19,11 @@ function search(){
   searchInput = document.querySelector(".filter-input");
   searchValue = searchInput.value;
   console.log(searchValue);
+  for (i=0;i<namesParagraphs.length;i++){ //Ok, isso acha se o nome for exatamente igual.
+    if(names[i]==searchValue){
+      console.log(i);
+    }
+  }
   //Agora: só exibe itens que tiverem o searchValue no texto do título (label)
 };
 
